@@ -1,21 +1,24 @@
-import 'dart:io';
-
 void main() {
-// Prompt the user to enter a number
-  print("Enter a number:");
+  // Integer data type
+  int myInt = 42;
+  print('Integer: ${myInt / 2}');
 
-  // Read the input from the user
-  String input = stdin.readLineSync()!;
+  // Double data type
+  double myDouble = 3.14;
+  double myDouble2 = 0.707;
+  double myDoubleResult = myDouble * myDouble2;
 
-  // Convert the input to an integer
-  int number = int.tryParse(input) ?? 0;
+  print('Double: $myDoubleResult');
 
-  // Check the criteria and print the message
-  if (number > 10) {
-    print("Your number is greater than 10");
-  } else if (number < 10) {
-    print("Your number is less than 10");
-  } else {
-    print("Your number is equal to 10");
-  }
+  // String data type
+  String myString = 'Hello, Dart!';
+  print('String: $myString');
+
+  // List data type (dynamic)
+  List<dynamic> myList = [1, 2, 'three', 4.0];
+  print('List: $myList');
+
+  // Map data type (String keys, int values)
+  Map<String, int> myMap = {'one': 1, 'two': 2, 'three': 3};
+  print('Map: $myMap');
 }
